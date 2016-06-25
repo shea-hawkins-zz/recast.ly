@@ -13,7 +13,7 @@ class App extends React.Component {
       currentVideo: window.exampleVideoData[0],
       videos: window.exampleVideoData
     };
-    searchYouTube({key: youtube, query: 'Bliss Eso', max: 6}, this.displayResults.bind(this));
+    searchYouTube({key: youtube, query: '', max: 6}, this.displayResults.bind(this));
   }
 
   displayResults(results) {
