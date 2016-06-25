@@ -1,10 +1,10 @@
 import React from 'react';
 import Search from './Search.jsx';
 
-var Nav = () => (
+var Nav = (props) => (
   <nav className="navbar">
     <div className="col-md-6 col-md-offset-3">
-      <Search />
+      <Search search={props.search}/>
     </div>
   </nav>
 );
